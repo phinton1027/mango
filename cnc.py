@@ -378,7 +378,4 @@ def main():
         threading.Thread(target=handle_client, args=[*sock.accept()]).start()
 
 if __name__ == '__main__':
-    try:
         main()
-    except Exception:
-        print('Error, skipping..')
